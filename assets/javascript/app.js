@@ -169,8 +169,11 @@ setInterval(function(){
         database.ref("/" + childSnapshot.key + "/").update({
           nextTrain: nextTrain
         });
-        $("#" + childSnapshot.key + "").text(childSnapshot.val().tMinutesTillTrain);
-        $("#" + childSnapshot.key + "").text(childSnapshot.val().nextTrain);
+        console.log("UPDATE TEXT EVERY MIN tMinutesTillTrain: ", childSnapshot.val().tMinutesTillTrain)
+        $(".minutes-till-train#" + childSnapshot.key + "").text(tMinutesTillTrain);
+        console.log("UPDATE TEXT EVERY MIN tMinutesTillTrain variable After the calc: ", tMinutesTillTrain)
+        $(".next-train#" + childSnapshot.key + "").text(nextTrain);
+        console.log("UPDATE TEXT EVERY MIN", $("#" + childSnapshot.key + ""))
       });
   });
 }, 60 * 1000);
