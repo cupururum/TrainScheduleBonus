@@ -1,0 +1,17 @@
+.jumbotron {
+  background-color: blue;
+  color: white;
+}
+
+.fixJumbotron {
+  height: 40px;
+}
+
+div.panel-heading.currentTrain {
+  background-color: blue;
+  color: white;
+}
+
+h1, p {
+  text-align: center;
+}

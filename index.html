@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap -->
+  	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--bootswatch link -->
+
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <title>Train Time</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row fixJumbotron">
+      </div>
+      <div class="row">
+         <div class="col-md-1">
+         </div>
+         <div class="col-md-10">
+           <div class="jumbotron"> <!-- Jumbotron -->
+               <h1>Anytime is Train Time</h1>
+             <p> Choo Choo. Chee Chee. </p>
+           </div>
+         </div>
+         <div class="col-md-1">
+         </div>
+      </div>
+
+       <div class="row"> <!-- first panel -->
+         <div class="col-md-1">
+         </div>
+         <div class="col-md-10">
+           <div class="panel panel-default">
+              <!-- Default panel contents -->
+              <div class="panel-heading currentTrain">
+                 <h3 class="panel-title">Current Train Schedule</h3>
+               </div>
+              <!-- Table -->
+              <table class="table">
+                <thead id="firstRow">
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                    <th></th>
+                </thead>
+                  <tbody id="tableBody">
+
+                  </tbody>
+
+              </table>
+            </div>
+         </div>
+         <div class="col-md-1">
+         </div>
+      </div>
+
+       <div class="row"> <!-- second panel -->
+         <div class="col-md-1">
+         </div>
+         <div class="col-md-10">
+           <div class="panel panel-default">
+              <div class="panel-heading currentTrain">
+                <h3 class="panel-title">Add Train</h3>
+              </div>
+              <div class="panel-body">
+
+                <!-- Sign-up Form (note the various input "types")-->
+                <form role="form">
+                  <div class="form-group">
+                    <label for="name-input">Train Name</label>
+                    <input class="form-control" id="name-input" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="email-input">Destination</label>
+                    <input class="form-control" id="destination-input" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="age-input">First Train Time (HH:mm - military time)</label>
+                    <input class="form-control" id="first-time-input" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="comment-input">Frequency (min)</label>
+                    <input class="form-control" id="frequency-input" type="text">
+                  </div>
+                  <button class="btn btn-default info" id="add-data" type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+         </div>
+         <div class="col-md-1">
+         </div>
+      </div>
+    </div>
+  <!-- Link to Moment.js-->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- link to jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- link to bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+  <!-- link to firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
